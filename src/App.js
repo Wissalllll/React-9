@@ -20,14 +20,14 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Dictionary App</h1>
+      <h1>Mon Dictionnaire</h1>
       <input
         type="text"
-        placeholder="Enter a word"
+        placeholder="Veuillez entrer un mot"
         value={word}
         onChange={(e) => setWord(e.target.value)}
       />
-      <button onClick={fetchDefinition}>Search</button>
+      <button onClick={fetchDefinition}>Rechercher</button>
       <p>{definition}</p>
     </div>
   );
